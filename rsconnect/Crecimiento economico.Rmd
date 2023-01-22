@@ -1,0 +1,118 @@
+---
+title: "Crecimiento Económico"
+author: "Edison Achlama Mendoza"
+date: "2022-10-04"
+output:
+  html_document:
+    toc: yes
+    toc_float: yes
+    theme: united
+    code_download: yes
+  pdf_document:
+    toc: yes
+subtitle: Universidad Nacional de San Cristóbal de Huamanga
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Capítulo I. Introducción
+
+## 1.1. Crecimiento económico, 
+
+¿Por qué algunos países han crecido más rápidamente que otros?¿Cuáles son las características principales que diferencian a estos países?¿Pueden algunas variables políticas afectar al crecimiento económico?
+
+Crecimiento económico. Es la evolución del PBI real (efectos de cantidad), PBI per cápita, PPC (Paridad de Poder de Compra) sostenido en el tiempo de un país.
+
+## ¿Por qué?
+
+Es importante hablar de crecimiento económico porque genera bienestar, esta relacionado con la calidad de vida.
+
+Hay una correlación positiva entre los países desarrollados con el PBI 
+
+## ¿Crecmiento económico y Desarrollo Económico?
+
+En el largo plazo el crecimiento económico va estar relacionado con la calidad de vida y el bienestar.
+
+¿Por qué hay países pobres?
+
+* El nivel de productividad es bajo
+
+* Las instituciones en países pobres son extractivas por tanto no generan desarrollo mas bien generan un circulo viciosos
+
+* Geografía. Los países más tropicales están mas acostumbrados a ser un poco más ociosos.
+
+* Religión 
+
+
+
+## 1.2. Hechos estilizados
+
+### 1.2.1 Puzzle de Feldstein y Horioca
+
+
+
+### 1.2.1. Los HE de Kaldor y Romer
+
+```{r}
+library(ggplot2)
+library(ggExtra)
+data(mpg, package="ggplot2")
+
+theme_set(theme_bw())
+mpg_select <- mpg[mpg$hwy >= 35 & mpg$cty > 27, ]
+g <- ggplot(mpg, aes(cty, hwy)) + 
+  geom_count() + 
+  geom_smooth(method="lm", se=F)
+g
+```
+
+
+## Modelos de Crecimiento
+
+## 1.3. La contabilidad del crecimiento 
+
+
+## 1.4. Visón general de las teorías de crecimiento económico 
+
+# Capítulo II. Inicio de las teorías del  crecimiento económico 
+## 2.1. El modelo de Malthus  
+## 2.2. El modelo de Solow (básico) 
+
+## 2.3. El modelo de Harrod - Domar 
+
+
+# Capítulo III. Teorías de crecimiento endógeno 
+
+## 3.1. Modelo de AK (básico)  
+
+## 3.2. Modelo de Romer 
+
+## 3.3. Modelo de Lucas 
+
+  
+## 3.4. Modelo de Barro  
+
+# Capítulo IV. Estudios empíricos sobre el  crecimiento económico 
+
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
