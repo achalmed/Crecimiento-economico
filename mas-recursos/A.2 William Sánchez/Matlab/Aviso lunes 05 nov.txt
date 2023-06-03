@@ -1,0 +1,12 @@
+El día de hoy, el profesor Ismael realizó una breve introducción a Matlab.
+Revisamos los archivos 0.1 Matrices, 02.Bucles y Practica_Bucles (pdf)
+
+Luego, con esos conocimientos básicos realizamos el ejercicio para
+el modelo de Solow. Revisen Practica_Matlab.
+
+Se explicó las gráficas ante cambio de tasas de ahorro y crecimiento de la
+población.
+
+Para el próximo lunes se deberá entregar qué ocurre ante cambios de la tasa
+de depreciación, para ello deberán emplear los comandos que están en
+03.Solow2vf.m
